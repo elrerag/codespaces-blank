@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <form>
+        <!--input tipo texto-->
+        <label for="texto">Tipo: Alfanumérico</label>
+        <input class="form-control" id=""texto type="text" name="texto">
+        <!--input tipo número-->
+        <label for="numero" >Tipo: Número</label>
+        <input class="form-control" id="numero" type="number" name="número" />
+        <!--input tipo correo-->
+        <label for="correo" >Tipo: Correo electrónico</label>
+        <input class="form-control" id="correo" type="correo" name="correo" />
+        <!--input tipo contraseña-->
+        <label for="contrasenia">Tipo Contraseña</label>
+        <input class="form-control" id="contrasenia" type="password" name="contresenia" />
+
+        <!--input tipo submit de envío-->
+        <input class="btn btn-primary" type="submit" value="Enviar submit" />
+        <!--botón para envío de formulario-->
+        <button class="btn btn-primary">Enviar botón</button>
+        <!--botón tipo enlace-->
+        <a href="javascript:0" onclick="this.parentElement.submit()" role="button" class="btn btn-primary">Enviar a href</a> 
+
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
