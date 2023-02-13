@@ -17,7 +17,7 @@
         <input class="form-control" id="numero" type="number" name="número" />
         <!--input tipo correo-->
         <label for="correo" >Tipo: Correo electrónico</label>
-        <input class="form-control" id="correo" type="correo" name="correo" />
+        <input class="form-control" id="correo" type="email" name="correo" />
         <!--input tipo contraseña-->
         <label for="contrasenia">Tipo Contraseña</label>
         <input class="form-control" id="contrasenia" type="password" name="contresenia" />
@@ -38,7 +38,7 @@
         <label for="radio03">Tipo: radio03</label><br>
 
         <!--input tipo submit de envío-->
-        <input class="btn btn-primary" type="submit" value="Enviar submit" />
+        <input class="btn btn-primary" type="submit" value="Enviar submit"/>
         <!--botón para envío de formulario-->
         <button class="btn btn-primary">Enviar botón</button>
         <!--botón tipo enlace-->
@@ -46,6 +46,24 @@
 
     </form>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--script creado para mostrar lo que envía el formulario-->
+    <script >
+        // captura del querystring
+        var cadena = window.location.search 
+        // captura de los parámetros del querystring
+        let params = new URLSearchParams(cadena)
+        // muestra valores enviados para verificar
+        var valores = ""
+        for (const [key, value] of params.entries()) {
+            valores += `Key: ${key} Value: ${value} \n`
+        }
+        if(valores != ""){
+            alert(valores)
+        }
+
+    </script>
+
 </body>
 </html>
